@@ -1,0 +1,42 @@
+﻿<Window x:Class="ProyectoSemestralED.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoSemestralED"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="estrellaCinco">
+        <ListView x:Name="listaViewMain" HorizontalAlignment="Left" Height="258" Margin="10,29,0,0" VerticalAlignment="Top" Width="248" SelectionChanged="listaViewMain_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Serie ó Película" Width="120"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Año}" Header="Año" Width="120"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnAgregarElemento" Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="293,30,0,0" VerticalAlignment="Top" Width="160" Click="btnAgregarElemento_Click"/>
+        <Button x:Name="btnLetras1" Content="A - Z" HorizontalAlignment="Left" Margin="44,333,0,0" VerticalAlignment="Top" Width="75" Click="btnLetras1_Click"/>
+        <Button x:Name="btnLetras2" Content="Z - A" HorizontalAlignment="Left" Margin="44,373,0,0" VerticalAlignment="Top" Width="75" Click="btnLetras2_Click"/>
+        <Button x:Name="btnNumeros1" Content="1 - 10" HorizontalAlignment="Left" Margin="148,333,0,0" VerticalAlignment="Top" Width="75" Click="btnNumeros1_Click"/>
+        <Button x:Name="btnNumeros2" Content="10 - 1" HorizontalAlignment="Left" Margin="148,373,0,0" VerticalAlignment="Top" Width="75" Click="btnNumeros2_Click"/>
+        <Label x:Name="lblOrdenar" Content="Ordenar" HorizontalAlignment="Left" Margin="107,298,0,0" VerticalAlignment="Top"/>
+        <Grid x:Name="grdContenido" HorizontalAlignment="Left" Height="269" Margin="293,56,0,0" VerticalAlignment="Top" Width="490"/>
+        <Button x:Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="446,367,0,0" VerticalAlignment="Top" Width="75" Click="btnActualizar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="672,367,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
+        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="361,367,0,0" VerticalAlignment="Top" Width="75" Click="btnEditar_Click" />
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="630,343,0,0" VerticalAlignment="Top" Width="75" Click="btnGuardar_Click" />
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="585,367,0,0" VerticalAlignment="Top" Width="75" Click="btnEliminar_Click" />
+        <Label x:Name="lblTipo" Content="Tipo" HorizontalAlignment="Left" Margin="491,27,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbtnPelicula" Content="Pelicula" HorizontalAlignment="Left" Margin="532,34,0,0" VerticalAlignment="Top" Checked="rdbtnPelicula_Checked"/>
+        <RadioButton x:Name="rdbtnSerie" Content="Serie" HorizontalAlignment="Left" Margin="613,34,0,0" VerticalAlignment="Top" Checked="rdbtnSerie_Checked"/>
+        <Button x:Name="btnGuardar2" Content="Guardar" HorizontalAlignment="Left" Margin="630,391,0,0" VerticalAlignment="Top" Width="75" Click="btnGuardar2_Click"/>
+        <Label x:Name="lblRellenarCampos" Content="Debes rellenar todos los campos" HorizontalAlignment="Left" Margin="288,4,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Red"/>
+        <Image x:Name="estrellaUno" Margin="672,26,29.6,367" Source="1.png" Stretch="Fill"/>
+        <Image x:Name="estrellaDos" Margin="672,26,29.6,367" Source="2.png" Stretch="Fill"/>
+        <Image x:Name="estrellaTres" Margin="672,26,29.6,367" Source="3.png" Stretch="Fill"/>
+        <Image x:Name="estrellaCuatro" Margin="672,26,29.6,367" Source="4.png" Stretch="Fill"/>
+        <Image x:Name="estrellaCinco1" Margin="672,26,29.6,367" Source="5.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>
