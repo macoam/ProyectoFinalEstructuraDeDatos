@@ -371,8 +371,7 @@ namespace ProyectoSemestralED
             }
             else
             {
-                var pruebaaño = ((AgregarNuevoElemento)(grdContenido.Children[0])).txtAño.Text;
-                int añofine = int.Parse(pruebaaño);
+                int añofine = Convert.ToInt32(((AgregarNuevoElemento)(grdContenido.Children[0])).txtAño.Text);
                 string temporadass = "No posible";
 
                 element.Add(new Elementos(((AgregarNuevoElemento)(grdContenido.Children[0])).txtTitulo.Text, añofine, ((AgregarNuevoElemento)(grdContenido.Children[0])).cbGenero.Text, temporadass, ((AgregarNuevoElemento)(grdContenido.Children[0])).txtProductor.Text, ((AgregarNuevoElemento)(grdContenido.Children[0])).txtDescripcion.Text, ((AgregarNuevoElemento)(grdContenido.Children[0])).cbRanting.Text));
